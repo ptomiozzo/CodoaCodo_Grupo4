@@ -30,7 +30,38 @@ class complejo:
         imag= -(a*d - b*c)/((c**2)-(d**2))
         return(complejo(real,imag))
 
+class vectores3D:
+    def __init__(self,x=0,y=0,z=0) -> None:
+        self.x = float(x)
+        self.y = float(y)
+        self.z = float(z)
+    
+    def __str__ (self):
+        return "[" + str(self.x) + "," + str(self.y) + "," + str(self.z) + "]"
 
+    def suma (vector1, vector2):
+        x = vector1.x + vector2.x
+        y = vector1.y + vector2.y
+        z = vector1.z + vector2.z
+        return(vectores3D(x,y,z))
+    
+    def resta (vector1, vector2):
+        x = vector1.x - vector2.x
+        y = vector1.y - vector2.y
+        z = vector1.z - vector2.z
+        return(vectores3D(x,y,z))
+    
+    def prodescalar (vector, escalar):
+        x = vector.x * escalar
+        y = vector.y * escalar
+        z = vector.z * escalar
+        return(vectores3D(x,y,z))
+    
+    def divescalar (vector, escalar):
+        x = vector.x / escalar
+        y = vector.y / escalar
+        z = vector.z / escalar
+        return(vectores3D(x,y,z))
 
 
 
@@ -39,6 +70,18 @@ y = complejo(1,5)
 z = complejo.resta(x,y)
 q = complejo.producto(x,y)
 w = complejo.division(x,y)
+
+print(x)
+print(y)
+print(z)
+print(q)
+print(w)
+
+x = vectores3D(2.5,4)
+y = vectores3D(1,5,6.3)
+z = vectores3D.suma(x,y)
+q = vectores3D.resta(x,y)
+w = vectores3D.prodescalar(x,4)
 
 print(x)
 print(y)
