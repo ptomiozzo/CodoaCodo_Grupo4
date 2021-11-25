@@ -124,12 +124,12 @@ class matriz: #La matriz está escrita por columnas [x y z], y cada columna es u
 #print(q)
 #print(w)
 
-a1 = matriz([1,2,3],[2,3,4],[7,1,2])
-a2 = matriz([0,1,3],[4,0,2],[5,0,1])
-x = vector(2,5,4)
+#a1 = matriz([1,2,3],[2,3,4],[7,1,2])
+#a2 = matriz([0,1,3],[4,0,2],[5,0,1])
+#x = vector(2,5,4)
 
-a3 = matriz.prodvector(a1,x)
-a4 = matriz.resta(a1,a2)
+#a3 = matriz.prodvector(a1,x)
+#a4 = matriz.resta(a1,a2)
 
-print(a3)
-print(a4)
+#print(a3)
+#print(a4)
